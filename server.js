@@ -8,16 +8,16 @@ const app = express();
 
 app.use(express.json());
 
-// Define routes for your API endpoints
+// Routes for your API endpoints
 app.use('/api/events', require('./routes/events'));
-app.use('/api/events/find', require('./routes/eventFinder')); // Add this line
+app.use('/api/events/find', require('./routes/eventFinder'));
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// Connect to MongoDB database
+// MongoDB database connection
 const dbURI = process.env.DB_URI;
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
