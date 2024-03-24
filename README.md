@@ -12,8 +12,11 @@ The Event Finder API is a RESTful web service that allows users to search for ev
 # Technologies Used
 
    Node.js: The API is built using Node.js, a JavaScript runtime environment.
+   
    Express.js: Express.js is used to create the web server and handle HTTP requests. 
+   
    MongoDB: MongoDB is used as the database to store event data.
+   
    Mongoose: Mongoose is an Object Data Modeling (ODM) library for MongoDB and is used for database interactions.
 
   API Documentation
