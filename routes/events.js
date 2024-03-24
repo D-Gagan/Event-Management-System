@@ -1,9 +1,9 @@
 // Import required modules
 const express = require('express');
 const router = express.Router();
-const Event = require('../models/Event'); // Import the Event model
+const Event = require('../models/Event'); 
 
-// POST route for adding new events
+// POST
 router.post('/', async (req, res) => {
   try {
     // Create a new event instance using the request body
