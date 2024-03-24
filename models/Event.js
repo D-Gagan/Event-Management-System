@@ -1,7 +1,7 @@
 // Import mongoose package
 const mongoose = require('mongoose');
 
-// Define the event schema
+// event schema
 const eventSchema = new mongoose.Schema({
   eventName: {
     type: String,
@@ -16,15 +16,15 @@ const eventSchema = new mongoose.Schema({
     required: true
   },
   time: {
-    type: String, // Assuming time is stored as a string
+    type: String,
     required: true
   },
   latitude: {
-    type: Number, // Change type to Number for latitude
+    type: Number, 
     required: true
   },
   longitude: {
-    type: Number, // Change type to Number for longitude
+    type: Number, 
     required: true
   },
   weather: {
@@ -32,7 +32,7 @@ const eventSchema = new mongoose.Schema({
     required: true
   },
   distance_km: {
-    type: Number, // Change type to Number for distance_km
+    type: Number, 
     required: true
   }
 });
