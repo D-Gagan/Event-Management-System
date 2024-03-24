@@ -9,15 +9,15 @@ router.get('/', async (req, res) => {
     const endDate = new Date(date);
     endDate.setDate(startDate.getDate() + 14);
 
-    // Convert latitude and longitude to numbers
+    
     const lat = parseFloat(latitude);
     const lon = parseFloat(longitude);
 
-    // Query events within the date range and near the specified location
+    // events within the date range and near the specified location
     const events = await Event.find({
       date: { $gte: startDate, $lte: endDate },
-      latitude: { $gte: lat - 0.5, $lte: lat + 0.5 }, // Adjust latitude range as needed
-      longitude: { $gte: lon - 0.5, $lte: lon + 0.5 }  // Adjust longitude range as needed
+      latitude: { $gte: lat - 0.5, $lte: lat + 0.5 }, 
+      longitude: { $gte: lon - 0.5, $lte: lon + 0.5 } 
     }).sort('date');
     
 
