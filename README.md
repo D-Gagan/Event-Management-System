@@ -24,11 +24,17 @@ The Event Finder API is a RESTful web service that allows users to search for ev
 The Event Finder API provides the following endpoints:
 
   GET /api/events/find: Search for events near a specified location and on a given date.
-       Query Parameters:
+  
+      Query Parameters:
+       
            latitude: Latitude of the user's location.
+           
            longitude: Longitude of the user's location.
+           
            date: Date of the event in YYYY-MM-DD format.
+           
            page: Page number for pagination.
+           
            pageSize: Number of events to include per page.
 
   POST /api/events: Add a new event to the database.
